@@ -1,0 +1,52 @@
+.query-row{
+    /*height: 110px;*/
+}
+.query-row .col-md-8{
+    line-height: 73px;
+}
+.query-row .col-md-8 span{
+    font-size: 16px;
+}
+.weather-result{
+
+}
+.weather-result .row{
+    border: 1px solid #336633;
+    border-bottom: none;
+}
+.weather-result .row:last-child{
+    border-bottom: 1px solid #336633;
+}
+.weather-result .row .col-md-2:first-child h4{
+    /*line-height: 43px;*/
+}
+.weather-result .row .col-md-2{
+    height: 94px;
+}
+.weather-result .row .col-md-2 h4{
+    height: 92px;
+    line-height: 64px;
+}
+.weather-result .row .col-md-1{
+    height: 94px;
+}
+.weather-result .row .col-md-1 h4{
+    height: 92px;
+    line-height: 64px;
+}
+.weather-result .row .col-md-3 h4:first-child{
+    color:#CC0000;
+    margin-top: 21px;
+}
+#province-dropdown,#city-dropdown,#district-dropdown{
+    height:195px;
+    overflow: auto;
+    font-size: 16px;
+}
+#province-dropdown,#city-dropdown,#district-dropdown ul{
+
+}
+#province-dropdown,#city-dropdown,#district-dropdown ul li{
+
+    border-bottom: 1px solid #808cad;
+}

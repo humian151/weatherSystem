@@ -1,9 +1,11 @@
 package com.zwq.dto;
 
+import java.io.Serializable;
+
 /**
  * 返回工具类
  */
-public class Result {
+public class Result implements Serializable{
     private int stateCode;
     private Object message;
 

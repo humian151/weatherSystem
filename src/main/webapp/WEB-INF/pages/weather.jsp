@@ -9,33 +9,33 @@
 <body>
 <div class="container">
     <div class="row query-row">
-        <div class="col-md-4">
+        <div class="col-sm-2 col-md-4  hidden-xs">
             <h2>我的天气</h2>
         </div>
-        <div class="col-md-8">
-            <span>城市选择：</span>
-            <div class="btn-group btn-group-lg" role="group">
+        <div class="col-sm-10 col-md-8">
+            <span class="hidden-xs">城市选择：</span>
+            <div class="btn-group" role="group">
                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">上海 <span class="caret"></span></button>
                 <ul class="dropdown-menu" id="province-dropdown">
                     <!-- 省份 -->
                 </ul>
             </div>
-            <div class="btn-group btn-group-lg" role="group">
+            <div class="btn-group" role="group">
                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">上海 <span class="caret"></span></button>
                 <ul class="dropdown-menu" id="city-dropdown">
                     <!-- 城市 -->
                 </ul>
             </div>
-            <div class="btn-group btn-group-lg" role="group">
+            <div class="btn-group" role="group">
                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">上海 <span class="caret"></span></button>
                 <ul class="dropdown-menu" id="district-dropdown">
                     <!-- 县、区 -->
                 </ul>
             </div>
-            <button class="btn btn-info btn-lg" id="btn-weather">查看天气</button>
+            <button class="btn btn-info" id="btn-weather">查看天气</button>
         </div>
     </div>
     <h4 id="show-city-name">上海天气</h4>
@@ -213,11 +213,11 @@ function listWeather(data,ele,day) {
         default:
             weatherImg = 'image/4.png';
     }
-    $('<div class="row"></div>').append('<div class="col-md-2"><h4>'+day+'</h4></div>')
-        .append('<div class="col-md-2"><h4>'+data.date+'</h4></div>')
-        .append('<div class="col-md-2"><img height="94" src="'+weatherImg+'" alt=""></div>')
-        .append('<div class="col-md-1"><h4>'+data.type+'</h4></div>')
-        .append('<div class="col-md-3"><h4>'+data.low+'~'+data.high+'</h4><h4>'+data.fx+data.fl+'</h4></div>').appendTo(ele);
+    $('<div class="row"></div>').append('<div class="hidden-xs col-md-2"><h4>'+day+'</h4></div>')
+        .append('<div class="col-xs-6 col-md-2"><h4>'+data.date+'</h4></div>')
+        .append('<div class="col-xs-6 col-md-2"><img height="94" src="'+weatherImg+'" alt=""></div>')
+        .append('<div class="col-xs-6 col-md-1"><h4>'+data.type+'</h4></div>')
+        .append('<div class="col-xs-6 col-md-3"><h4>'+data.low+'~'+data.high+'</h4><h4>'+data.fx+data.fl+'</h4></div>').appendTo(ele);
 }
 </script>
 </html>

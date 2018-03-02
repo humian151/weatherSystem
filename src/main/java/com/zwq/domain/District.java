@@ -1,9 +1,11 @@
 package com.zwq.domain;
 
+import java.io.Serializable;
+
 /**
  * 县区表
  */
-public class District {
+public class District  implements Serializable {
     private int id;
     private String name;
     private String postcode;

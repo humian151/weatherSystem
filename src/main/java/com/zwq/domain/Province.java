@@ -1,9 +1,11 @@
 package com.zwq.domain;
 
+import java.io.Serializable;
+
 /**
  *  省份表
  */
-public class Province {
+public class Province implements Serializable{
     private int id;
     private String name;
     private int orderid;

@@ -1,9 +1,11 @@
 package com.zwq.domain;
 
+import java.io.Serializable;
+
 /**
  * 城市表
  */
-public class City {
+public class City  implements Serializable {
     private int id;
     private String name;
     private String areaCode;
